@@ -1,0 +1,1048 @@
+@import url('http://fonts.cdnfonts.com/css/mark-pro');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #10101A;
+    --secondary-color:  aliceblue;
+    --third-color: #191929;
+    --shadow: 0px 0px 50px rgba(0, 0, 0, 0.413);
+    --review-color :#050810;
+}
+
+.lightTheme{
+    --primary-color:  aliceblue;
+    --secondary-color: rgb(10, 8, 15);
+    --third-color: rgb(221, 227, 232);
+    --shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    --review-color : rgb(200, 207, 213);
+
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    /* font-family: 'Mark Pro', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    
+    
+}
+
+/* <!-- Navbar starts here --> */
+.navbar {
+    color: var(--secondary-color);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+nav {
+    padding: 0 40px;
+    z-index: 200;
+    position: fixed;
+    width: 50vw;
+    height: 8vh;
+    /* background-color: #1D1E29; */
+    border: 1px solid rgb(39, 39, 39);
+    border-radius: 20px; 
+    background: linear-gradient(180deg, rgba(98, 98, 98, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    border:1px solid rgba(190, 190, 190, 0.059);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.172);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    /* position: fixed;
+    top: 5rem;
+    right: 0;
+    left: 0;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(42,43,56,.5);
+    border: 0.2rem solid #2a2b37;
+    -webkit-backdrop-filter: blur(104px);
+    backdrop-filter: blur(104px);
+    border-radius: 2rem; */
+
+}
+
+.logo {
+    /* margin-left: 3rem; */
+}
+
+.logo a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+.menubar h3{
+    margin-right: 3rem;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+#icon{
+    z-index: 220;
+    transform: scale(1.2);
+    /* margin-top: 60px; */
+    /* background-color: #fff; */
+    color: var(--secondary-color);
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!-- Navbar ends here -->
+<!-- Homepage starts here --> */
+
+main {
+    height: 80vh;
+    position: relative;
+    display: flex;
+
+    /* box-sizing: border-box; */
+}
+
+.hpText {
+    /* font-weight: 200; */
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    width: 40vw;
+
+    margin-left: 25vw;
+    margin-top: 30vh;
+    font-size: 35px;
+}
+main img{
+    position: absolute;
+    left: 55vw;
+    top: 20vh;
+    /* bottom: 18vh; */
+}
+
+.hpText h1 {
+    font-weight: 800;
+    line-height: 10vh;
+}
+
+.homeProduct {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    animation: grad 2s linear infinite;
+}
+
+@keyframes grad {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 100%   ;
+    }
+}
+
+.viewProject {
+    width: 10vw;
+    /* margin-left: 25vw; */
+    margin-top: 10vh;
+}
+
+.viewProject:hover hr {
+    width: 8vw;
+    transition: 0.5s ease-out;
+}
+
+.viewProject a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+hr {
+    
+    background-color: var(--secondary-color);
+    margin-top: 1vh;
+    height: 2px;
+    width: 4vw;
+    border: none;
+}
+
+
+/* subheading animation2 starts */
+.subhead {
+    width: 500px;
+}
+.dynamic{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.dynamic:before {
+    content: '';
+    animation: change 5s infinite;
+
+}
+
+@keyframes change {
+
+    0%,
+    100% {
+        content: "Graphic Designer";
+    }
+
+    25% {
+        content: "Web Designer";
+    }
+
+    50% {
+        content: "2D Animator";
+    }
+
+    75% {
+        content: "Video Editing";
+    }
+}
+
+/* subheading animation2 over */
+
+
+
+
+
+
+
+
+/* <!-- Homepage ends here -->
+<!-- Project Section starts here --> */
+
+.green{
+    color: rgb(8, 195, 8);
+}
+.project {
+    margin-top: 20vh;
+    /* height: 480vh; */
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+}
+
+.pText {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: 25vw;
+}
+
+.workHard {
+    font-size: 40px;
+    margin-left: 25vw;
+    margin-top: 10vh;
+}
+
+.project .des {
+    font-size: 20px;
+    margin-left: 25vw;
+    margin-top: 2vh;
+    font-weight: 500;
+}
+
+/* cards css */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0vh;
+}
+
+.card1 {
+    
+    
+    margin-top: 20vh;
+    /* height: 80vh; */
+}
+
+.card2 {
+    /* margin: 20vh 0; */
+    margin-top: 30vh;
+    
+    /* height: 80vh; */
+}
+
+.card3 {
+    margin-top: 30vh;
+    
+    /* margin: 20vh 0; */
+    
+    /* height: 80vh; */
+}
+
+.card4 {
+    /* margin: 20vh 0; */
+    margin-top: 30vh;
+    
+    
+    /* height: 80vh; */
+}
+
+.cardImage img{
+    height: 400px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.091);
+}
+
+
+.projectCard {
+    box-shadow: var(--shadow);
+    height: 55vh;
+    width: 50vw;
+    /* background: var(--third-color); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 55px;
+    /* white-space: wrap; */
+    background-image: linear-gradient(180deg, var(--third-color), var(--primary-color));
+    
+}
+
+
+.num {
+    /* background-image: linear-gradient(180deg, var(--third-color), var(--primary-color)); */
+    position: absolute;
+    margin-left: 45vw;
+    margin-top: -13vh;
+    font-size: 80px;
+    color: linear-gradient(180deg, var(--third-color), var(--primary-color));;
+}
+
+.num h1 {
+    /* border: 1px solid rgb(22, 16, 37); */
+    text-shadow: var(--shadow);
+    
+}
+
+/* .cardImage {
+    height: 45vh;
+    width: 20vw;
+    background-color: rgb(33, 31, 49);
+    border-radius: 75px;
+    clip-path: url(/Images/1.jpg);
+    /* margin-left: 8vw;
+
+}
+*/
+
+.mText {
+    height: 35vh;
+    width: 15vw;
+    margin-right: 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--secondary-color);
+    /* background: #000; */
+}
+
+.mText h1 {
+    color: var(--secondary-color);
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.mText h3 {
+    font-weight: 500;
+    font-size: 1.2em;
+    color: var(--secondary-color);
+}
+
+.mText .visitWebs hr {
+    margin-top: -1vh;
+    width: 4vw;
+    margin-left: 0;
+
+}
+
+.mText .visitWeb:hover hr {
+    width: 9vw;
+    transition: 0.5s;
+}
+
+.project a:link {
+    text-decoration: none;
+}
+
+.icon a {
+    font-size: 1.5em;
+    margin-right: 0.5vw;
+}
+
+
+
+/* Cards section ends here */
+
+/* review section starts here  */
+
+.review {
+    height: 65vh;
+    /* background: var(--review-color); */
+    background-image: linear-gradient(180deg, var(--third-color), var(--primary-color));
+
+    /* padding: 5vh 0; */
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+
+
+    color: var(--secondary-color);
+
+}
+
+.review h1 {
+    font-size: 40px;
+    margin-left: 25vw;
+    margin-top: 10vh;
+    
+}
+
+.review h3 {
+    /* color: var(--primary-color); */
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25vw;
+    margin-top: 2vh;
+
+}
+
+.review p,
+.p2 {
+    /* width: 60vw; */
+    /* height: 12vh; */
+    /* background: rgb(59, 35, 35); */
+    margin-top: 2vh;
+    border-radius: 10px;
+}
+
+.rev {
+    /* list-style: none;
+    text-decoration: none; */
+    margin: 5vh auto;
+    align-self: auto;
+    width: 50vw;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 5%; */
+    padding: 5vh 0;
+    /* background-color: #fff; */
+}
+
+.rev .clientReview1,
+.rev .clientReview2,
+.rev .clientReview3 {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 2em;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px;
+
+}
+
+.rev .clientReview1 a,
+.rev .clientReview2 a,
+.rev .clientReview3 a {
+    font-size: 2em;
+}
+
+.rev .clientReview1 a,
+.rev .clientReview2 a,
+.rev .clientReview3 a:link {
+    text-decoration: none;
+}
+
+/* <!-- Project Section ends here -->
+<!-- SoldOut starts here --> */
+
+.soldOut {
+    margin-top: 10vh;
+    height: 80vh;
+    /* background-color: #fff; */
+    z-index: 100;
+}
+
+.soldOut h1 {
+    font-size: 40px;
+    margin-left: 25vw;
+    
+}
+
+.ds{
+
+    margin-top: 10vh;
+}
+
+.soldOut h3 {
+    width: 50vw;
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 25vw;
+    margin-top: 2vh;
+    /* text-shadow: 2px 2px 20px rgb(0, 0, 0); */
+}
+
+.soldOut h4 {
+    margin-left: 25vw;
+    margin-top: 2vh;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.soldOut .socialIcon {
+    margin-left: 25vw;
+    margin-top: 10vh;
+    font-weight: 500;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.soldOut .socialIcon a:link {
+
+    text-decoration: none;
+}
+
+.soldOut .socialIcon a {
+    color: var(--secondary-color);
+    /* text-decoration: none; */
+}
+
+.stranger{
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sAbout{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* height: 30vh; */
+
+}
+
+.sImg{
+    position: absolute;
+    right: 250px;
+    top: -50px;
+    z-index: -10;
+    
+    /* background-image: url(/Images/about1.png); */
+    /* height: 500px;
+    width: 200px;
+    object-fit: contain; */
+    
+}
+.and{
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.name{
+    font-weight: 200;
+    font-size: 40px;
+    /* background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700; */
+}
+
+
+/* <!-- Footer starts here --> */
+
+.footer {
+    border-top: 1px solid var(--secondary-color);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.footer .fLogo {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer .fLogo a {
+    color: var(--secondary-color);
+    font-weight: 800;
+    font-size: 1.8em;
+    margin-right: 10px;
+
+}
+
+.footer .fLogo a:link {
+    display: flex;
+    text-decoration: none;
+}
+
+.footer .fIcon a {
+    margin-left: 10px;
+    color: var(--secondary-color);
+}
+
+.footer .fIcon a:link {
+    text-decoration: none;
+
+}
+
+
+/*--------------- Resposive's CSS------------- */
+
+@media screen and (max-width: 600px) {
+    body{
+
+        width: 100vw;
+        box-sizing: border-box;
+        
+    }
+    .navbar {
+        width: 100vw;
+        margin-top: 50px;
+       
+    
+    
+    }
+
+    nav {
+        width: 80vw;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -20px;
+        
+    }
+ 
+    .logo {
+        margin-left: 15px;
+    }
+
+    .logo a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+
+    .menubar h3 {
+        margin-right: 15px;
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+    
+    /* <!-- Navbar ends here -->
+    <!-- Homepage starts here --> */
+
+
+    .hpText {
+        width: 60vw;
+        display: flex;
+        margin-left: 10vw;
+        margin-top: 10vh;
+        word-wrap: break-word;
+        
+    }
+    .hpText h1{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .hpText img{
+        width: 0%;
+        height: 0%;
+        position: absolute; 
+        left: 0vw;
+        bottom: 28vh;
+    }
+
+ 
+
+   
+
+    .viewProject {
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 12vh;
+        line-height: 15px;
+    }
+
+    .viewProject a {
+        
+        font-size: 0.8em;
+    }
+
+    hr {
+        width: 20vw;
+    }
+
+    /* <!-- Homepage ends here -->
+    <!-- Project Section starts here --> */
+
+    .project{
+        height: 450vh;
+        width: 100vw;
+    }
+
+
+    .pText {
+        font-size: 1em;
+        font-weight: 500;
+        margin-left: 10vw;
+        width: 65vw;
+        position: absolute;
+        bottom: 40px;
+
+        /* margin-top: 10vh; */
+    }
+
+    .workHard {
+        width: 60vw;
+        font-size: 30px;
+        margin-left: 10vw;
+        margin-top: 10vh;
+        line-height: 40px;
+    }
+
+    .project .des {
+        width: 60vw;
+        margin-left: 10vw;
+        
+    }
+
+/* cards css */
+
+    .cards {
+        width: 100vw;
+        margin-top: 0;
+    }
+    
+    .card1{
+        margin-top: 20vh;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .card2,
+    .card3,
+    .card4 {
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .cardImage img{
+        height: 250px;
+        width: 200px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.348);
+    }
+
+
+    .projectCard {
+        box-sizing: border-box;
+        padding: 30px 0;
+        box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.805);
+        height: 60vh;
+        width: 70vw;
+        background: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 35px;
+        /* white-space: wrap; */
+
+    }
+
+
+    .num {
+        position: absolute;
+        margin-left: 0;
+        margin-top: -70px;
+        font-size: 50px;
+       
+    }
+
+    .num h1 {
+        /* border: 1px solid rgb(22, 16, 37); */
+        text-shadow: 10px 10px 50px #000;
+        
+    }
+
+
+    .mText {
+        /* margin-top: 20px; */
+        height: 150px;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: var(--secondary-color);
+        margin-right: 0vw;
+
+     
+    }
+    
+    .mText h1 {
+        line-height: 35px;
+        
+        font-size: 30px;
+    }
+
+    .mText h3 {
+        width: 30vw;
+        font-weight: 500;
+        font-size: 0.7em;
+        color: var(--secondary-color);
+    }
+
+    .mText .visitWebs hr {
+        margin-top: -1vh;
+        width: 8vw;
+        margin-left: 0;
+
+    }
+    .icon{
+        width: 50vw;
+       
+    }
+
+    .icon a {
+        font-size: 1.2em;
+        margin-right: 0.5vw;
+    }
+ /* Cards section ends here */
+
+    
+/* review section starts here  */
+
+    .review {
+        width: 100vw;
+    }
+
+    .review p, .p2{
+        margin-top: 0;
+    }
+
+    .review h1 {
+        font-size: 20px;
+        margin-left: 10vw;
+        margin-top: 10vh;
+
+    }
+
+    .review h3 {
+        width: 50vw;
+        font-size: 0.8em;
+        margin-left: 10vw;
+        margin-top: 1vh;
+        font-weight: 400;
+
+    }
+
+   
+
+    .rev {
+        /* list-style: none;
+        text-decoration: none; */
+        margin: 0;
+        height: 300px;
+        align-self: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* margin-bottom: 5%; */
+        padding: 5vh 0;
+        /* background-color: #fff; */
+    }
+
+    .rev .clientReview1,
+    .rev .clientReview2,
+    .rev .clientReview3 {
+        width: 80vw;
+        height: 80px;
+        
+        background-color: var(--primary-color);
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        
+    }
+    .rev .clientReview1,
+    .rev .clientReview2,
+    .rev .clientReview3 p {
+    
+    margin: 0;
+    
+    }
+    
+    .rev .clientReview1 a,
+    .rev .clientReview2 a,
+    .rev .clientReview3 a {
+        font-size: 1.2em;
+    }
+
+    .rev .clientReview1 a,
+    .rev .clientReview2 a,
+    .rev .clientReview3 a:link {
+        text-decoration: none;
+    }
+
+    /* <!-- Project Section ends here -->
+    <!-- SoldOut starts here --> */
+
+    .soldOut {
+        width: 80vw;
+        margin-top: 0;
+        height: 60vh;
+        margin-left: 10vw;
+    }
+
+    .soldOut h1 {
+        font-size: 20px;
+        margin-left: 0;
+        margin-top: 3vh;
+
+    }
+
+    .soldOut h3 {
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 0;
+        margin-top: 2vh;
+        width: 70vw;
+    }
+
+    .soldOut h4 {
+        margin-left: 0;
+        margin-top: 0;
+        font-weight: 500;
+    }
+
+    .soldOut .socialIcon {
+        margin-left: 0;
+        margin-top: 10vh;
+        font-weight: 500;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .soldOut .socialIcon a {
+        color: var(--secondary-color);
+        font-size: 10px;
+        /* text-decoration: none; */
+    }
+
+
+    /* <!-- Footer starts here --> */
+
+    .footer {
+        border-top: 1px solid var(--secondary-color);
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 0;
+        box-sizing: border-box;
+    }
+
+    .footer .fLogo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer .fLogo a {
+        color: var(--secondary-color);
+        font-weight: 800;
+        font-size: 1.8em;
+        margin-right: 0px;
+
+    }
+
+    .footer .fLogo a:link {
+        display: flex;
+        text-decoration: none;
+    }
+
+    .footer .fIcon a {
+        margin-left: 0px;
+        color: var(--secondary-color);
+    }
+
+
+
+
+
+
+
+
+
+}

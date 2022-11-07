@@ -1,0 +1,49 @@
+body{
+    margin: 0;padding: 0;
+    background-color: #fff;
+}
+nav{
+    
+    
+}
+
+.header{
+    background-color: rgb(163, 191, 255);
+    height: 100px;
+    width: 100vw;
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cancle{
+    display: none;
+}
+
+ul{
+    display: block;
+    position: fixed;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    left: 10vw;
+}
+
+ul li{
+    padding: 50px 0;
+    font-size: 1.4em;
+    list-style: none;
+    display: block;
+
+}
+#check{
+    display: none;
+}
+
+
+
+#check:checked ~ ul{
+    left: 0;
+}

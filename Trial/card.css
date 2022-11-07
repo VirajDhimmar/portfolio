@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.projectCard{
+    height: 55vh;
+    width: 50vw;
+    background: rgb(22, 16, 37);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 55px;
+    /* white-space: wrap; */
+
+}
+
+
+.num{
+    position: absolute;
+    margin-left: 50vw;
+    margin-bottom: 50vh;
+    font-size: 80px;
+    color: white;
+}
+
+.num h1{
+    /* border: 1px solid rgb(22, 16, 37); */
+    text-shadow: 2.5px 1px #000;
+}
+
+.cardImage{
+   height: 400px;
+   width: 300px;
+   background-color: rgb(33, 31, 49);
+   border-radius: 75px;
+   /* margin-left: 8vw; */
+
+}
+
+.mText{
+    height: 35vh;
+    /* margin-left: 3vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: wheat;
+    /* background: #000; */
+}
+
+.mText h1{
+    color: aliceblue;
+    font-size: 50px;
+}
+.mText .visitWeb hr{
+    margin-top: -1vh;
+    width: 4vw;
+    margin-left: 0;
+}

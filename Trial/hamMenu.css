@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 25px 15px;
+    
+}
+
+.wrapper{
+    /* background: pink; */
+    /* height: vh;
+    width: 50vw; */
+}
+
+.container{
+    /* background-color: antiquewhite; */
+    height: 3vh;
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.line1, .line2, .line3{
+    background: #000;
+    height: 3px;
+    width: 2vw;
+}
+.menuItem{
+    background: pink;
+    width: 50vw;
+    height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-1000px);
+    transition: 0.5s;
+}
+.menuItem li{
+
+    list-style-type: none;
+    padding: 50px;
+    text-align: center;
+    font-size: large;
+    border-bottom: 1px solid black;
+    width: 5em;
+}
+
+.showMenu{
+    transform: translateX(0px);
+}
+
+.menuItem :last-child{
+    border-bottom: none;
+}
+.menuItem li:first-child{
+    font-weight: bold;
+}
+
+.menuItem li a{
+    text-decoration: none;
+    color: #000;
+    transition: font-weight 0.2s ease;
+    
+}
+
+.menuItem li a:hover{
+    font-weight: bold;
+}
+
+.cross{
+    /* transition: 2s ease; */
+    
+}
+
+.cross .line1{
+    transition: 0.2s ease;
+    transform: translateY(7px) rotate(45deg);
+}
+.cross .line2{
+    transition: 0.2s ease;
+    transform: translateY(-5px) rotate(-45deg);
+}
+.cross .line3{
+    opacity: 0;
+}
